@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sistema Empresarial</title>
+</head>
+<body>
+
+<h1>Lista de Productos</h1>
+
+<a href="/crear">➕ Crear Producto</a>
+
+<table border="1" cellpadding="10">
+   <tr>
+       <th>ID</th>
+       <th>Nombre</th>
+       <th>Precio</th>
+       <th>Stock</th>
+       <th>Acciones</th>
+   </tr>
+
+   {% for p in productos %}
+   <tr>
+       <td>{{ p.id }}</td>
+       <td>{{ p.nombre }}</td>
+       <td>{{ p.precio }}</td>
+       <td>{{ p.stock }}</td>
+       <td>
+           <a href="/eliminar/{{ p.id }}">❌ Eliminar</a>
+       </td>
+   </tr>
+   {% endfor %}
+</table>
+
+</body>
+</html>

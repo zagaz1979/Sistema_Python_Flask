@@ -1,0 +1,47 @@
+# ==========================================
+# Entornos Virtuales y Gestores de Paquetes
+# ==========================================
+# Ignora el entorno virtual creado por uv (.venv)
+.venv/
+venv/
+ENV/
+
+# NOTA: NO ignores 'uv.lock' ni 'pyproject.toml'. 
+# Deben subirse al repositorio para garantizar versiones consistentes.
+
+
+# ==========================================
+# Cachés de Python y Compilación
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+
+# ==========================================
+# Herramientas de Calidad de Código (Linters/Formatters)
+# ==========================================
+# Ignora la caché de Ruff que tienes en la raíz
+.ruff_cache/
+.mypy_cache/
+
+
+# ==========================================
+# Configuración de Entorno e Información Sensible
+# ==========================================
+# Archivos donde guardes credenciales, llaves secretas de Flask o BD
+.env
+.flaskenv
+instance/
+dist/
+build/
+
+
+# ==========================================
+# Sistemas Operativos y Editores (Opcional)
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
